@@ -1,0 +1,43 @@
+/* Configurações do corpo inteiro da página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Configurações do topo da tela */
+header {
+    margin-bottom: 20px;
+}
+
+/* Configurações do botão de Novo Jogo */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Configuração da caixa que guarda a tabela e a lista de palavras */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Configuração do quadro de letras (a tabela) */
+.grid {
+    display: grid;
+    gap: 2px;
+    background: #ccc;
+    padding: 2px;
+    border-radius: 5px;
+    user-select: none;
+}
