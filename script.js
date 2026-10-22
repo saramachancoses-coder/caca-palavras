@@ -92,6 +92,33 @@ function iniciarJogo() {
     const listaHtml = document.getElementById('word-list');
     listaHtml.innerHTML = palavrasAtuais.map(p => `<li id="palavra-${p}">${p}</li>`).join('');
 }
+function verificarPalavra(){
+    let selecionadas =
+    Array.from(document.querySelectorAll('.cell.selected'))
 
+    let textoselecionado = selelcionadas.map(c=> c.textContent).join('';)
+
+    let achaou= palavrasAtuais.find(p +> === textoSelecionado || p === textoInvertido);
+
+    if(achou){
+          selecionadas.forEacg(c=> {
+            c.classList.remove('selected');
+            c.classList.add('found');
+
+          });
+    document.getElementById(`palavra-${achou}`).classList.add('found');
+
+    palavrasAtuais = palavrasAtuais.filter(p => p !== achou);
+    if(palavrasAtuais.length === 0){
+        setTimeout( => alert("Parabens! Voce encontrou todas as palavras!"),100);
+
+    }
+
+else if (selecionadas.length >= tamanhoGrid) {
+    (selecionadas.length .= c.classList.remove('selected'));
+}
+
+    }
+}
 // Inicia o jogo ao carregar a página
 iniciarJogo();
